@@ -1,8 +1,17 @@
 # ToDoVista
 ToDoVista is a simple ToDo application made native for Windows Vista. It's perfect for beginner programmers to learn creating Windows Native GUI applications using C# language. It's good for those who would like to feel that nostalgic feeling making small projects in Visual C# 2008-2010 or old OSes.
 
+![ssvista.png](images/ssvista.png)
+
 ## Background
 So I often use ToDo applications such as Microsoft To-Do, Google Tasks, etc. I decided to install Windows Vista in a VM and use it as my daily OS for a while to remember the first time I had a laptop (Windows Vista OEM installed!). But then I realize that I need a ToDo applications to even manage my tasks in an old OS. The first time I learned code was also in a Windows Vista environtment using Visual C# 2008. And while I got nothing to do in weekend, I try to made this app.
+
+## Features
+The main features of this simple app is:
+- Add a todo
+- Mark Todo as complete (WIP)
+- Delete a todo
+- Save ToDo list to a file (WIP)
 
 ## Technical Specification
 This application was made using:
