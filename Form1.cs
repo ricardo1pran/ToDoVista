@@ -38,6 +38,14 @@ namespace ToDoVista
         private void button1_Click(object sender, EventArgs e)
         {
             var todo = textBox1.Text;
+            if (todo.Equals(""))
+            {
+                MessageBox.Show(this, "Type something to add first!", "Warning",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
             listBox1.Items.Add(todo);
             textBox1.Text = "";
             //MessageBox.Show("To-Do added successfully!");
@@ -56,7 +64,7 @@ namespace ToDoVista
 
             if (listBox1.Items[listBox1.SelectedIndex].ToString().Contains("Completed!"))
             {
-                MessageBox.Show(this, "Oops! To-Do is already completed!", "Success",
+                MessageBox.Show(this, "Oops! To-Do is already completed!", "Warning",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning
                 );
                 return;
