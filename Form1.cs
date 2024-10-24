@@ -48,6 +48,7 @@ namespace ToDoVista
             }
             listBox1.Items.Add(todo);
             textBox1.Text = "";
+            textBox1.Focus();
             //MessageBox.Show("To-Do added successfully!");
         }
 
@@ -104,7 +105,7 @@ namespace ToDoVista
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this,"ToDoVista v.1.1.0\nMade by Ricardo1pran\n2023",
+            MessageBox.Show(this,"ToDoVista v.1.2.0\nMade by Ricardo1pran\n2023",
                 "About ToDoVista",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Asterisk);
@@ -141,6 +142,39 @@ namespace ToDoVista
                 
                 MessageBox.Show(this,"ToDo List saved succesfully!","Done!",
                     MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+        }
+
+        private void remCompletedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var x = MessageBox.Show("All completed ToDos will be removed!\nAre you sure?", "Clear Completed Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (x.Equals(DialogResult.Yes))
+            {
+                // iterate backwards to prevent messing with existing items' index
+                for (int i = listBox1.Items.Count - 1; i >= 0; i--)
+                {
+                    if (listBox1.Items[i].ToString().Contains(") --Completed!"))
+                    {
+                        listBox1.Items.RemoveAt(i);
+                    }
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void clearAllToDosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var x = MessageBox.Show("All ToDos will be removed!\nAre you sure?", "Clear All Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (x.Equals(DialogResult.Yes))
+            {
+                listBox1.Items.Clear();
+            }
+            else
+            {
+                return;
             }
         }
     }

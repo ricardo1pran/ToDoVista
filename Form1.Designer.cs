@@ -39,12 +39,13 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.featuresComingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.remCompletedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.clearAllToDosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -121,7 +122,7 @@
             // saveListAsToolStripMenuItem
             // 
             this.saveListAsToolStripMenuItem.Name = "saveListAsToolStripMenuItem";
-            this.saveListAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveListAsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.saveListAsToolStripMenuItem.Text = "Save List as";
             this.saveListAsToolStripMenuItem.Click += new System.EventHandler(this.saveListAsToolStripMenuItem_Click);
             // 
@@ -140,16 +141,18 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.featuresComingToolStripMenuItem});
+            this.remCompletedToolStripMenuItem,
+            this.clearAllToDosToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
-            // featuresComingToolStripMenuItem
+            // remCompletedToolStripMenuItem
             // 
-            this.featuresComingToolStripMenuItem.Name = "featuresComingToolStripMenuItem";
-            this.featuresComingToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.featuresComingToolStripMenuItem.Text = "Features coming";
+            this.remCompletedToolStripMenuItem.Name = "remCompletedToolStripMenuItem";
+            this.remCompletedToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.remCompletedToolStripMenuItem.Text = "Remove Completed ToDos";
+            this.remCompletedToolStripMenuItem.Click += new System.EventHandler(this.remCompletedToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -190,6 +193,13 @@
             // 
             this.saveFileDialog1.FileName = "My To Do List.txt";
             // 
+            // clearAllToDosToolStripMenuItem
+            // 
+            this.clearAllToDosToolStripMenuItem.Name = "clearAllToDosToolStripMenuItem";
+            this.clearAllToDosToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.clearAllToDosToolStripMenuItem.Text = "Clear All ToDos";
+            this.clearAllToDosToolStripMenuItem.Click += new System.EventHandler(this.clearAllToDosToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,7 +236,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem featuresComingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem remCompletedToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button button1;
@@ -235,6 +245,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem clearAllToDosToolStripMenuItem;
     }
 }
 
