@@ -113,7 +113,7 @@ namespace ToDoVista
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Equals(Keys.Enter))
+            if (e.KeyCode == Keys.Enter)
             {
                 button1_Click(sender,e);
             }

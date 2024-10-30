@@ -40,12 +40,12 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.remCompletedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearAllToDosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.clearAllToDosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -154,6 +154,13 @@
             this.remCompletedToolStripMenuItem.Text = "Remove Completed ToDos";
             this.remCompletedToolStripMenuItem.Click += new System.EventHandler(this.remCompletedToolStripMenuItem_Click);
             // 
+            // clearAllToDosToolStripMenuItem
+            // 
+            this.clearAllToDosToolStripMenuItem.Name = "clearAllToDosToolStripMenuItem";
+            this.clearAllToDosToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.clearAllToDosToolStripMenuItem.Text = "Clear All ToDos";
+            this.clearAllToDosToolStripMenuItem.Click += new System.EventHandler(this.clearAllToDosToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -193,18 +200,11 @@
             // 
             this.saveFileDialog1.FileName = "My To Do List.txt";
             // 
-            // clearAllToDosToolStripMenuItem
-            // 
-            this.clearAllToDosToolStripMenuItem.Name = "clearAllToDosToolStripMenuItem";
-            this.clearAllToDosToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
-            this.clearAllToDosToolStripMenuItem.Text = "Clear All ToDos";
-            this.clearAllToDosToolStripMenuItem.Click += new System.EventHandler(this.clearAllToDosToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 416);
+            this.ClientSize = new System.Drawing.Size(304, 390);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);

@@ -31,6 +31,7 @@ There are no releases (portable or setup-based) yet. To try to use it, simply op
 I will consider to make a fully working installer later on (maybe using Inno Setup or default VS installer). Stay tuned!
 
 ### Changelogs
+- 1.2.0.1 - Bugfix for Enter Key event on ToDo textbox.
 - 1.2.0 - Add feature for clear all ToDos and completed ToDos on Edit menu.
 - 1.1.0 - Completion of Mark Todo as Complete and Save Todo List to a file (txt)
 - 1.0.0 - Initial project creation
